@@ -134,6 +134,20 @@ pip install pandas scikit-learn matplotlib joblib
 
 ---
 
+## Understanding the Decision Tree
+
+When you view the decision tree, here's a quick summary of what the elements mean:
+
+- The tree splits data based on feature thresholds
+- Each node shows how the data is distributed
+- The model predicts the majority class at each node
+- **Gini** indicates how reliable the split is
+- **Leaf nodes** provide the final classification
+
+For a detailed walkthrough of all values (split rules, `gini`, `value`, leaf nodes, etc.), see the **[Decision Tree Output Explanation](https://github.com/Grim-Moire/DietBite-AI/blob/main/Decision_Tree_Output_Explanation.md)**.
+
+---
+
 ## Troubleshooting
 
 | Problem | Solution |
