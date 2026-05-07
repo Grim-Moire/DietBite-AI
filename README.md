@@ -4,6 +4,8 @@
 It learns from your answers about a set of dishes (the 50 in the dataset) and then predicts whether other dishes are likely to be **suitable** or **not suitable** for your dietary needs.  
 The program runs as a simple desktop application – no web browser or command‑line needed.
 
+🌐 **Try the online demo:** [DietBite AI Web Demo](https://grim-moire.github.io/DietBite-AI/)
+
 ---
 
 ## Features
