@@ -1,8 +1,8 @@
 # DietBite AI
 
 **DietBite AI** is a personal meal suitability assistant.  
-It learns from your answers about a few dishes (50) and then predicts whether other dishes are likely to be **suitable** or **not suitable** for your dietary needs.  
-The program runs as a simple desktop application with no advanced setup required.
+It learns from your answers about a set of dishes (the 50 in the dataset) and then predicts whether other dishes are likely to be **suitable** or **not suitable** for your dietary needs.  
+The program runs as a simple desktop application – no web browser or command‑line needed.
 
 ---
 
@@ -13,15 +13,16 @@ The program runs as a simple desktop application with no advanced setup required
 - **Decision tree** – Visualises the rules the AI learned (e.g., “if sugar ≤ 10 g → suitable”).
 - **Clear nutritional table** – During training, a table shows the exact values for salt, time, fat, and sugar so you can decide based on data.
 - **Simple GUI** – Built with Tkinter, no web browser or command‑line needed.
+- **Undo support** – The **Back** button lets you change previous answers without corrupting the data (answers are saved only at the end).
 
 ---
 
 ## How it works (in short)
 
-1. **You teach** – The app asks about random dishes from the dataset.  
+1. **You teach** – The app asks you about all dishes from the dataset.  
    You see their nutritional info and tell the AI whether they are “good for you”.
-2. **It learns** – After a few answers (50), a decision‑tree model is trained on your labels.
-3. **It helps** – The model can then predict the suitability of all other dishes.
+2. **It learns** – Once you’ve answered every dish, a decision‑tree model is trained on all your labels at once.
+3. **It helps** – The model can then predict the suitability of dishes in your prediction list.
 4. **You explore** – The decision tree shows you the simple rules behind the predictions.
 
 The AI uses the features `salt`, `time`, `fat`, and `sugar` (from your dataset) to make its decisions.
@@ -35,18 +36,18 @@ DietBite/
 ├── app/
 │   ├── installer.py       # Installs required Python packages
 │   ├── main.py            # Prediction logic & decision tree display
-│   ├── train.py           # Training loop & model saving
+│   ├── train.py           # Training functions & model saving
 │   └── ui.py              # Graphical user interface (Tkinter)
 └── data/
     ├── meals_dataset.csv  # Main dataset (dishes with features and labels)
     ├── meals_list.csv     # List of dishes to predict (same features, no label)
-    ├── meals_trained.csv  # (Generated) Your updated labels after training
+    ├── meals_trained.csv  # (Generated) Your answers after a complete training session
     └── model.pkl          # (Generated) Trained decision tree model
 ```
 
 - `meals_dataset.csv` is used for training. It must contain the columns: `dish`, `salt`, `time`, `fat`, `sugar`, `label`.
 - `meals_list.csv` is the list of dishes you want to predict. It should have the same feature columns but **no** `label` column.
-- When you run the training, your answers are saved into `meals_trained.csv` and a new model `model.pkl` is created.
+- After you answer all dishes, your labels are saved to `meals_trained.csv` and the model is saved as `model.pkl`.
 
 ---
 
@@ -74,7 +75,7 @@ pip install pandas scikit-learn matplotlib joblib
 
 ### 4. Prepare your data
 - Make sure `meals_dataset.csv` and `meals_list.csv` are inside the `data/` folder.
-- The `meals_dataset.csv` must have at least one dish with a `label` of `0` or `1` as starting point. If you don’t have labels yet, you can fill the `label` column with `0` (not suitable) temporarily – the training will overwrite them with your answers.
+- The `meals_dataset.csv` must have a `label` column with initial values (e.g., all `0`). These will be completely overwritten by your answers during training.
 - The `meals_list.csv` should contain all dishes you want to get predictions for (can be the same as the dataset or a separate list).
 
 ---
@@ -99,17 +100,18 @@ pip install pandas scikit-learn matplotlib joblib
    Sugar (g)    6
    ```
    Choose **Yes**, **No**, or **No Idea** based on whether that dish suits you.  
-   You can click **Back** to change a previous answer.
+   You can click **Back** to go to the previous question and change your answer – your previous answer stays recorded until you finish training, so no data is lost or corrupted.
 
 3. **Complete training**  
-   After you answer all dishes, the model is trained automatically and you return to the main menu.  
-   The message “Training completed!” appears temporarily.
+   After you have answered all dishes, the model is trained automatically using all your answers and you return to the main menu.  
+   The message “Training completed!” appears temporarily.  
+   Your answers are now saved in `data/meals_trained.csv` and the model in `data/model.pkl`.
 
 4. **Get predictions**  
-   Click **“Predict Dishes”** to see which dishes are suitable (✔) and which are not (✖).
+   Click **“Predict Dishes”** to see which dishes from `meals_list.csv` are suitable (✔) and which are not (✖).
 
 5. **View the decision tree**  
-   Click **“Show Decision Tree”** to see the simple rules that the AI uses.
+   Click **“Show Decision Tree”** to see the simple rules the AI uses.
 
 6. **Exit** – You can close the application at any time using the **Exit** button (bottom‑right corner on every screen).
 
@@ -117,9 +119,9 @@ pip install pandas scikit-learn matplotlib joblib
 
 ## Important notes
 
-- The model only learns from the features you see in the table (`salt`, `time`, `fat`, `sugar`). If you need more, you can extend the CSV files and adapt the code.
-- The training loop asks **every dish** in `meals_dataset.csv`. If you want fewer questions, you can reduce the dataset or modify `train.py` to stop early.
-- Your answers are saved permanently in `data/meals_trained.csv`. You can restart training later and it will continue from the current labels.
+- The model only learns from the features you see in the table (`salt`, `time`, `fat`, `sugar`). If you need more, extend your CSV files and update the feature lists in the code.
+- The training loop asks **every dish** in `meals_dataset.csv`. If you want fewer questions, you can reduce the dataset before starting the app.
+- **Each training session starts from the original `meals_dataset.csv`.** The app does **not** load previous answers from `meals_trained.csv` when you restart. To continue where you left off, replace `meals_dataset.csv` with `meals_trained.csv` before launching again.
 - If you click **Predict Dishes** or **Show Decision Tree** before training at least once, an error will appear because no model exists. Always train first.
 
 ---
@@ -127,7 +129,7 @@ pip install pandas scikit-learn matplotlib joblib
 ## Customisation
 
 - **To change units** (e.g., salt in mg instead of g), edit the `column_unit_map` dictionary in `ui.py`.
-- **To use different nutritional features**, add them to your CSV files and update the feature lists in `main.py`, `train.py`, and `ui.py` (the column map and the feature names array).
+- **To use different nutritional features**, add them to your CSV files and update the feature lists in `main.py`, `train.py`, and `ui.py` (the column map and the `feature_names` array).
 - **Window size** can be changed in `ui.py` with `root.geometry("800x600")`.
 
 ---
@@ -137,7 +139,7 @@ pip install pandas scikit-learn matplotlib joblib
 | Problem | Solution |
 |---------|----------|
 | `FileNotFoundError` for `meals_dataset.csv` | Ensure the `data/` folder is **one level above** the `app/` folder and contains the CSV file. |
-| `No model found` error when predicting | You must complete the training first (answer all questions or at least train once). |
+| `No model found` error when predicting | You must complete the training first (answer all dishes). |
 | Tkinter window does not open | Install `python3-tk` (Linux) or reinstall Python with Tk support. |
 | Decision tree window does not appear | Make sure `matplotlib` is installed and your system can display graphical windows. |
 | `pandas` or `sklearn` not found | Run `installer.py` or `pip install pandas scikit-learn matplotlib joblib`. |
