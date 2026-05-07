@@ -1,3 +1,5 @@
+![Example Decision Tree](https://raw.githubusercontent.com/Grim-Moire/DietBite-AI/main/Decision_tree_example.png)
+
 # Decision Tree Output Explanation
 
 This section explains the meaning of the values shown in the decision tree visualization.
