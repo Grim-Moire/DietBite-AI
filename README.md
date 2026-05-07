@@ -1,4 +1,3 @@
-
 # DietBite AI
 
 **DietBite AI** is a personal meal suitability assistant.  
@@ -145,4 +144,4 @@ pip install pandas scikit-learn matplotlib joblib
 
 ---
 
-*DietBite AI – Developed by Grim-Moire and Co., 2026*
+*DietBite AI – Developed by Grim-Moire and Grasshalm, 2026*
