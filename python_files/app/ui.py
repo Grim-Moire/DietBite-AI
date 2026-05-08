@@ -106,6 +106,11 @@ btn_predict.pack(pady=10)
 btn_tree = tk.Button(main_frame, text="Show Decision Tree", font=("Helvetica", 16), command=b_show_tree)
 btn_tree.pack(pady=10)
 
+# disclaimer
+disclaimer_text = ("Disclaimer: The shown values in the training module are per serving!")
+disc_txt = tk.Label(main_frame, text=disclaimer_text, font=("Helvetica", 16, "bold"), fg="black")
+disc_txt.pack(pady=20)
+
 # copyright label stays at bottom
 copyright_label = tk.Label(
     main_frame,
