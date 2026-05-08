@@ -1,101 +1,101 @@
 dish,salt,time,fat,sugar,label
-Spaghetti Bolognese,3.2,45,17,6,1
-Margherita Pizza,3.8,30,19,5,1
-Caesar Salad,2.6,20,14,3,1
-Grilled Chicken Breast,1.2,25,4,0,1
-Cheeseburger,5.3,20,26,7,0
-French Fries,2.8,15,19,1,0
-Lasagna,4.4,60,23,7,0
-Sushi Rolls,2.3,50,7,5,1
-Pad Thai,3.6,40,13,9,1
-Fried Rice,3.1,30,11,4,1
-Ramen,4.8,35,14,6,0
-Steak,1.8,25,21,0,1
-Mashed Potatoes,2.3,30,9,3,1
-Fish and Chips,4.3,40,24,2,0
-Chicken Curry,2.9,45,17,6,1
-Butter Chicken,4.1,50,24,8,0
-Tacos,3.4,25,14,4,1
-Burrito,4.1,30,19,5,0
-Hot Dog,4.6,10,21,6,0
-Pancakes,1.9,20,9,12,1
-Waffles,2.3,25,11,14,1
-Omelette,1.7,15,10,1,1
-Scrambled Eggs,1.4,10,9,1,1
-Grilled Salmon,1.9,25,13,0,1
-Roast Beef,2.8,90,19,1,0
-Chicken Nuggets,3.9,15,17,3,0
-Vegetable Stir Fry,2.3,20,7,5,1
-Falafel,2.9,30,13,4,1
-Hummus,2.1,10,9,3,1
-Shakshuka,2.4,25,11,6,1
-Risotto,3.4,40,14,4,1
-Gnocchi,2.9,30,11,3,1
-Mac and Cheese,4.3,35,21,6,0
-Tomato Soup,1.9,30,5,5,1
-Pumpkin Soup,2.1,35,6,6,1
-Chicken Soup,1.8,40,7,3,1
-Beef Stew,3.4,120,17,4,0
-Lentil Soup,2.4,50,5,4,1
-Quiche Lorraine,3.7,45,21,3,0
-Greek Salad,2.4,15,11,4,1
-Coleslaw,1.9,20,11,6,1
-Club Sandwich,3.4,15,17,5,0
-BLT Sandwich,3.1,15,15,4,0
-Avocado Toast,1.9,10,13,2,1
-Bagel Cream Cheese,2.9,10,17,5,0
-Croissant,1.7,5,19,4,0
-Chocolate Cake,2.4,60,23,25,0
-Ice Cream,1.4,5,14,20,0
-Apple Pie,1.9,70,17,22,0
-Brownies,2.1,45,21,24,0
-Chicken Alfredo,4.4,40,26,5,0
-Spaghetti Carbonara,3.9,35,23,4,0
-Miso Soup,2.8,15,4,2,1
-Tempura,3.3,25,17,3,0
-Dumplings,2.9,30,11,4,1
-Spring Rolls,2.4,20,9,3,1
-Pho,3.4,60,7,4,1
-Bibimbap,3.1,45,9,5,1
-Kimchi Fried Rice,3.9,30,13,3,0
-Currywurst,4.9,20,26,10,0
-Schnitzel,3.4,30,21,2,0
-Rösti,2.4,25,14,1,1
-Fondue,4.4,60,31,2,0
-Raclette,4.0,50,29,2,0
-Kebab,4.4,15,19,5,0
-Shawarma,3.9,20,17,4,0
-Paella,3.4,60,14,3,1
-Gazpacho,1.9,20,5,5,1
-Tapas,2.9,30,11,4,1
-Chili con Carne,3.7,60,19,5,0
-Nachos,4.4,20,23,4,0
-Quesadilla,3.4,25,19,3,0
-Enchiladas,3.9,40,21,5,0
-Fajitas,2.9,30,11,4,1
-Poke Bowl,2.4,20,7,4,1
-Smoothie Bowl,1.4,10,5,12,1
-Granola,1.9,15,9,14,1
-Yogurt Fruits,1.4,5,4,10,1
-Cereal Milk,1.7,5,5,12,1
-Protein Shake,1.1,5,3,8,1
-Tofu Stir Fry,2.4,25,9,3,1
-Veggie Burger,3.4,20,13,5,1
-Vegan Curry,2.9,40,11,6,1
-Stuffed Peppers,2.7,45,9,5,1
-Eggplant Parmesan,3.4,50,19,6,0
-Zucchini Noodles,1.9,20,5,3,1
-Caprese Salad,2.4,10,11,3,1
-Bruschetta,2.7,15,9,4,1
-Garlic Bread,3.4,15,13,3,0
-Onion Rings,3.9,20,17,4,0
-Mozzarella Sticks,4.4,15,21,3,0
-Chicken Wings,4.4,25,23,2,0
-BBQ Ribs,4.7,90,31,10,0
-Pulled Pork,4.1,120,26,8,0
-Grilled Vegetables,1.9,20,7,3,1
-Stuffed Mushrooms,2.4,25,9,3,1
-Seafood Pasta,3.4,40,13,4,1
-Clam Chowder,3.7,45,17,5,0
-Beef Burger,4.9,20,29,6,0
-Turkey Sandwich,2.9,10,9,4,1
+Spaghetti Bolognese,2.1,45,22,8,1
+Margherita Pizza,2.5,30,24,6,1
+Caesar Salad,1.4,20,18,2,1
+Grilled Chicken Breast,0.8,25,5,0,1
+Cheeseburger,1.2,20,26,7,0
+French Fries,0.9,15,19,1,0
+Lasagna,2.7,60,28,9,0
+Sushi Rolls,1.2,50,8,6,1
+Pad Thai,2.0,40,16,10,1
+Fried Rice,1.8,30,13,5,1
+Ramen,3.0,35,18,7,0
+Steak,1.0,25,25,0,1
+Mashed Potatoes,1.4,30,10,4,1
+Fish and Chips,2.6,40,29,3,0
+Chicken Curry,1.9,45,20,7,1
+Butter Chicken,2.5,50,27,9,0
+Tacos,1.8,25,15,5,1
+Burrito,2.4,30,22,6,0
+Hot Dog,1.9,10,23,7,0
+Pancakes,1.1,20,10,14,1
+Waffles,1.4,25,12,16,1
+Omelette,1.0,15,11,1,1
+Scrambled Eggs,0.8,10,10,1,1
+Grilled Salmon,1.2,25,15,0,1
+Roast Beef,1.7,90,22,1,0
+Chicken Nuggets,2.2,15,19,4,0
+Vegetable Stir Fry,1.4,20,8,6,1
+Falafel,1.7,30,15,5,1
+Hummus,1.2,10,10,3,1
+Shakshuka,1.5,25,13,7,1
+Risotto,2.0,40,16,5,1
+Gnocchi,1.7,30,12,4,1
+Mac and Cheese,2.6,35,25,7,0
+Tomato Soup,1.1,30,6,6,1
+Pumpkin Soup,1.3,35,7,7,1
+Chicken Soup,1.1,40,8,4,1
+Beef Stew,2.1,120,20,5,0
+Lentil Soup,1.5,50,6,5,1
+Quiche Lorraine,2.3,45,25,4,0
+Greek Salad,1.4,15,13,5,1
+Coleslaw,1.2,20,13,7,1
+Club Sandwich,2.0,15,19,6,0
+BLT Sandwich,1.9,15,17,5,0
+Avocado Toast,1.2,10,15,3,1
+Bagel Cream Cheese,1.8,10,19,6,0
+Croissant,1.0,5,21,5,0
+Chocolate Cake,1.5,60,27,30,0
+Ice Cream,0.9,5,16,24,0
+Apple Pie,1.2,70,19,26,0
+Brownies,1.3,45,25,28,0
+Chicken Alfredo,2.7,40,30,6,0
+Spaghetti Carbonara,2.4,35,27,5,0
+Miso Soup,1.1,15,4,2,1
+Tempura,2.0,25,20,4,0
+Dumplings,1.7,30,13,5,1
+Spring Rolls,1.4,20,10,4,1
+Pho,2.1,60,8,5,1
+Bibimbap,1.9,45,10,6,1
+Kimchi Fried Rice,2.4,30,15,4,0
+Currywurst,3.0,20,30,12,0
+Schnitzel,2.1,30,24,3,0
+Rösti,1.5,25,16,2,1
+Fondue,2.7,60,35,3,0
+Raclette,2.5,50,33,3,0
+Kebab,2.6,15,22,6,0
+Shawarma,2.4,20,20,5,0
+Paella,2.1,60,16,4,1
+Gazpacho,1.1,20,6,6,1
+Tapas,1.8,30,13,5,1
+Chili con Carne,2.3,60,22,6,0
+Nachos,2.7,20,26,5,0
+Quesadilla,2.1,25,22,4,0
+Enchiladas,2.4,40,24,6,0
+Fajitas,1.8,30,13,5,1
+Poke Bowl,1.5,20,8,5,1
+Smoothie Bowl,0.9,10,6,14,1
+Granola,1.2,15,11,16,1
+Yogurt Fruits,0.9,5,5,12,1
+Cereal Milk,1.0,5,6,14,1
+Protein Shake,0.7,5,4,10,1
+Tofu Stir Fry,1.5,25,11,4,1
+Veggie Burger,2.1,20,15,6,1
+Vegan Curry,1.8,40,13,7,1
+Stuffed Peppers,1.7,45,11,6,1
+Eggplant Parmesan,2.1,50,22,7,0
+Zucchini Noodles,1.2,20,6,4,1
+Caprese Salad,1.5,10,13,4,1
+Bruschetta,1.7,15,11,5,1
+Garlic Bread,2.1,15,15,4,0
+Onion Rings,2.4,20,20,5,0
+Mozzarella Sticks,2.7,15,24,4,0
+Chicken Wings,2.7,25,26,3,0
+BBQ Ribs,2.9,90,36,12,0
+Pulled Pork,2.6,120,30,10,0
+Grilled Vegetables,1.2,20,8,4,1
+Stuffed Mushrooms,1.5,25,11,4,1
+Seafood Pasta,2.1,40,15,5,1
+Clam Chowder,2.3,45,20,6,0
+Beef Burger,3.0,20,33,7,0
+Turkey Sandwich,1.8,10,11,5,1
