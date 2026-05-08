@@ -8,7 +8,7 @@
 
 It learns from your answers about a set of dishes (the 50 in the dataset) and then predicts whether other dishes are likely to be **suitable** or **not suitable** for your dietary needs.  
 
-The program runs as a simple desktop application – no web browser or command‑line needed.
+The program runs as a simple desktop application.
  
 **This project was developed for a client who has a very strict diet and has difficulties deciding what dishes suit them and what do not.**
  
