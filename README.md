@@ -326,19 +326,13 @@ For a full walkthrough see the [Decision Tree Output Explanation](https://github
 ## Troubleshooting
  
 | Problem | Solution |
-
 |---------|----------|
-
 | `FileNotFoundError` for `meals_dataset.csv` | Ensure the `data/` folder is in the same folder as the `app/` folder and contains the CSV file. |
-
 | `No model found` error when predicting | You must complete the training first (answer all dishes). |
-
 | Tkinter window does not open | Install `python3-tk` (Linux) or reinstall Python with Tk support. |
-
 | Decision tree window does not appear | Make sure `matplotlib` is installed and your system can display graphical windows. |
-
 | `pandas` or `sklearn` not found | Run `installer.py` or `pip install pandas scikit-learn matplotlib joblib`. |
- 
+
 ---
  
 *DietBite AI – Developed by Grim-Moire and Grasshalm, 2026*
